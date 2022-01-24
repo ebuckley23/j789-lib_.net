@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="JsonNet.ContractResolvers" Version="2.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\J789.Library.Data.Abstraction\J789.Library.Data.Abstraction.csproj" />
+    <ProjectReference Include="..\J789.Library.Data\J789.Library.Data.csproj" />
+  </ItemGroup>
+
+</Project>
