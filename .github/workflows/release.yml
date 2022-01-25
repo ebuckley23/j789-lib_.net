@@ -65,7 +65,7 @@ jobs:
       - name: dotnet restore
         run: dotnet restore
       - name: docfx build
-        working-directory: docs
+        working-directory: docfx_project
         run: docfx docfx.json
         continue-on-error: false
       - name: Publish
