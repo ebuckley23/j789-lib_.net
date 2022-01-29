@@ -1,0 +1,8 @@
+- name: Core
+  href: core/toc.yml
+- name: Data
+  href: data/toc.yml
+- name: Dependency Injection
+  href: di/toc.yml
+- name: Integration
+  href: intg/toc.yml
