@@ -65,7 +65,7 @@ jobs:
       - name: dotnet restore
         run: dotnet restore
       - name: docfx build
-        working-directory: docs
+        working-directory: docfx_project
         run: docfx docfx.json
         continue-on-error: false
       - name: Publish
@@ -73,5 +73,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docs/_site
+          publish_dir: docfx_project/_site
           force_orphan: true
