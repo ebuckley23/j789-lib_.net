@@ -1,0 +1,754 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Specification&lt;TEntity&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Specification&lt;TEntity&gt;
+   ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="J789.Library.Data.Query.Specification`1">
+  
+  
+  <h1 id="J789_Library_Data_Query_Specification_1" data-uid="J789.Library.Data.Query.Specification`1" class="text-break">Class Specification&lt;TEntity&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Specification&lt;TEntity&gt;</span></div>
+      <div class="level2"><a class="xref" href="J789.Library.Data.Query.CommonSpecs.CursorPagingSpec-2.html">CursorPagingSpec&lt;TEntity, TId&gt;</a></div>
+      <div class="level2"><a class="xref" href="J789.Library.Data.Query.CommonSpecs.IsActiveSpec-1.html">IsActiveSpec&lt;TEntity&gt;</a></div>
+      <div class="level2"><a class="xref" href="J789.Library.Data.Query.CommonSpecs.OrderBySpec-1.html">OrderBySpec&lt;TEntity&gt;</a></div>
+      <div class="level2"><a class="xref" href="J789.Library.Data.Query.CommonSpecs.PaginationSpec-1.html">PaginationSpec&lt;TEntity&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="J789.Library.Data.Abstraction.Query.ISpecification-1.html">ISpecification</a>&lt;TEntity&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="J789.Library.Data.Query.html">J789.Library.Data.Query</a></h6>
+  <h6><strong>Assembly</strong>: J789.Library.Data.dll</h6>
+  <h5 id="J789_Library_Data_Query_Specification_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class Specification&lt;TEntity&gt; : ISpecification&lt;TEntity&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1__ctor.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.%23ctor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L10">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1__ctor_" data-uid="J789.Library.Data.Query.Specification`1.#ctor*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1__ctor" data-uid="J789.Library.Data.Query.Specification`1.#ctor">Specification()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Specification()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1__ctor_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.%23ctor(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L14">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1__ctor_" data-uid="J789.Library.Data.Query.Specification`1.#ctor*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1__ctor_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___" data-uid="J789.Library.Data.Query.Specification`1.#ctor(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">Specification(Expression&lt;Func&lt;TEntity, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Specification(Expression&lt;Func&lt;TEntity, bool&gt;&gt; criteria)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">criteria</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_Criteria.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.Criteria%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L19">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_Criteria_" data-uid="J789.Library.Data.Query.Specification`1.Criteria*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_Criteria" data-uid="J789.Library.Data.Query.Specification`1.Criteria">Criteria</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Expression&lt;Func&lt;TEntity, bool&gt;&gt; Criteria { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_Includes.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.Includes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L21">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_Includes_" data-uid="J789.Library.Data.Query.Specification`1.Includes*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_Includes" data-uid="J789.Library.Data.Query.Specification`1.Includes">Includes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Expression&lt;Func&lt;TEntity, object&gt;&gt;&gt; Includes { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_IncludeStrings.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.IncludeStrings%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L24">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_IncludeStrings_" data-uid="J789.Library.Data.Query.Specification`1.IncludeStrings*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_IncludeStrings" data-uid="J789.Library.Data.Query.Specification`1.IncludeStrings">IncludeStrings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; IncludeStrings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_IsCursorPagingEnabled.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.IsCursorPagingEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L36">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_IsCursorPagingEnabled_" data-uid="J789.Library.Data.Query.Specification`1.IsCursorPagingEnabled*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_IsCursorPagingEnabled" data-uid="J789.Library.Data.Query.Specification`1.IsCursorPagingEnabled">IsCursorPagingEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCursorPagingEnabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_IsPagingEnabled.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.IsPagingEnabled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L34">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_IsPagingEnabled_" data-uid="J789.Library.Data.Query.Specification`1.IsPagingEnabled*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_IsPagingEnabled" data-uid="J789.Library.Data.Query.Specification`1.IsPagingEnabled">IsPagingEnabled</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPagingEnabled { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_OrderBy.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.OrderBy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L26">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_OrderBy_" data-uid="J789.Library.Data.Query.Specification`1.OrderBy*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_OrderBy" data-uid="J789.Library.Data.Query.Specification`1.OrderBy">OrderBy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Expression&lt;Func&lt;TEntity, object&gt;&gt; OrderBy { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_OrderByDescending.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.OrderByDescending%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L28">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_OrderByDescending_" data-uid="J789.Library.Data.Query.Specification`1.OrderByDescending*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_OrderByDescending" data-uid="J789.Library.Data.Query.Specification`1.OrderByDescending">OrderByDescending</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Expression&lt;Func&lt;TEntity, object&gt;&gt; OrderByDescending { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_Skip.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.Skip%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L32">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_Skip_" data-uid="J789.Library.Data.Query.Specification`1.Skip*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_Skip" data-uid="J789.Library.Data.Query.Specification`1.Skip">Skip</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Skip { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_Take.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.Take%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L30">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_Take_" data-uid="J789.Library.Data.Query.Specification`1.Take*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_Take" data-uid="J789.Library.Data.Query.Specification`1.Take">Take</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Take { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_AddInclude_System_Linq_Expressions_Expression_System_Func__0_System_Object___.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.AddInclude(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L38">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_AddInclude_" data-uid="J789.Library.Data.Query.Specification`1.AddInclude*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_AddInclude_System_Linq_Expressions_Expression_System_Func__0_System_Object___" data-uid="J789.Library.Data.Query.Specification`1.AddInclude(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">AddInclude(Expression&lt;Func&lt;TEntity, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AddInclude(Expression&lt;Func&lt;TEntity, object&gt;&gt; include)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">include</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_AddInclude_System_String_.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.AddInclude(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L43">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_AddInclude_" data-uid="J789.Library.Data.Query.Specification`1.AddInclude*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_AddInclude_System_String_" data-uid="J789.Library.Data.Query.Specification`1.AddInclude(System.String)">AddInclude(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AddInclude(string include)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">include</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_ApplyCriteria_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.ApplyCriteria(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L77">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_ApplyCriteria_" data-uid="J789.Library.Data.Query.Specification`1.ApplyCriteria*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_ApplyCriteria_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___" data-uid="J789.Library.Data.Query.Specification`1.ApplyCriteria(System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">ApplyCriteria(Expression&lt;Func&lt;TEntity, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ApplyCriteria(Expression&lt;Func&lt;TEntity, bool&gt;&gt; criteria)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">criteria</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_ApplyCursorPaging_System_Int32_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Func__0_System_Boolean___.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.ApplyCursorPaging(System.Int32%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L56">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_ApplyCursorPaging_" data-uid="J789.Library.Data.Query.Specification`1.ApplyCursorPaging*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_ApplyCursorPaging_System_Int32_System_Linq_Expressions_Expression_System_Func__0_System_Object___System_Linq_Expressions_Expression_System_Func__0_System_Boolean___" data-uid="J789.Library.Data.Query.Specification`1.ApplyCursorPaging(System.Int32,System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}})">ApplyCursorPaging(Int32, Expression&lt;Func&lt;TEntity, Object&gt;&gt;, Expression&lt;Func&lt;TEntity, Boolean&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ApplyCursorPaging(int take, Expression&lt;Func&lt;TEntity, object&gt;&gt; orderBy, Expression&lt;Func&lt;TEntity, bool&gt;&gt; criteria)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">take</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">orderBy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">criteria</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_ApplyOrderBy_System_Linq_Expressions_Expression_System_Func__0_System_Object___.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.ApplyOrderBy(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L68">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_ApplyOrderBy_" data-uid="J789.Library.Data.Query.Specification`1.ApplyOrderBy*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_ApplyOrderBy_System_Linq_Expressions_Expression_System_Func__0_System_Object___" data-uid="J789.Library.Data.Query.Specification`1.ApplyOrderBy(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">ApplyOrderBy(Expression&lt;Func&lt;TEntity, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ApplyOrderBy(Expression&lt;Func&lt;TEntity, object&gt;&gt; orderBy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">orderBy</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_ApplyOrderByDescending_System_Linq_Expressions_Expression_System_Func__0_System_Object___.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.ApplyOrderByDescending(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L72">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_ApplyOrderByDescending_" data-uid="J789.Library.Data.Query.Specification`1.ApplyOrderByDescending*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_ApplyOrderByDescending_System_Linq_Expressions_Expression_System_Func__0_System_Object___" data-uid="J789.Library.Data.Query.Specification`1.ApplyOrderByDescending(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">ApplyOrderByDescending(Expression&lt;Func&lt;TEntity, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ApplyOrderByDescending(Expression&lt;Func&lt;TEntity, object&gt;&gt; orderByDescending)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">orderByDescending</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1_ApplyPaging_System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601.ApplyPaging(System.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L47">View Source</a>
+  </span>
+  <a id="J789_Library_Data_Query_Specification_1_ApplyPaging_" data-uid="J789.Library.Data.Query.Specification`1.ApplyPaging*"></a>
+  <h4 id="J789_Library_Data_Query_Specification_1_ApplyPaging_System_Int32_System_Int32_" data-uid="J789.Library.Data.Query.Specification`1.ApplyPaging(System.Int32,System.Int32)">ApplyPaging(Int32, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ApplyPaging(int skip, int take)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">take</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="J789.Library.Data.Abstraction.Query.ISpecification-1.html">ISpecification&lt;TEntity&gt;</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="J789.Library.Data.Query.Extensions.html#J789_Library_Data_Query_Extensions_And__1_J789_Library_Data_Abstraction_Query_ISpecification___0__J789_Library_Data_Abstraction_Query_ISpecification___0__">Extensions.And&lt;TEntity&gt;(ISpecification&lt;TEntity&gt;, ISpecification&lt;TEntity&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="J789.Library.Data.Query.Extensions.html#J789_Library_Data_Query_Extensions_Or__1_J789_Library_Data_Abstraction_Query_ISpecification___0__J789_Library_Data_Abstraction_Query_ISpecification___0__">Extensions.Or&lt;TEntity&gt;(ISpecification&lt;TEntity&gt;, ISpecification&lt;TEntity&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="J789.Library.Data.Query.Extensions.html#J789_Library_Data_Query_Extensions_Not__1_J789_Library_Data_Abstraction_Query_ISpecification___0__">Extensions.Not&lt;TEntity&gt;(ISpecification&lt;TEntity&gt;)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Data_Query_Specification_1.md&amp;value=---%0Auid%3A%20J789.Library.Data.Query.Specification%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Data/Query/Specification.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

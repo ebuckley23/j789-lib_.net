@@ -1,0 +1,1256 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/a/j789-lib_.net/j789-lib_.net/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Abstraction.Contexts.IIdentityContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Abstraction.Contexts.IIdentityContext.html",
+          "hash": "fZjML5XfP6X/daxj7foH5z0P8vKSCuMwe37QXYouQUA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Abstraction.Contexts.IUserContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Abstraction.Contexts.IUserContext.html",
+          "hash": "kDQEtDi9oV4AaRQkhboi+7/OGRLpbhhFBiPhh/b2GCY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Abstraction.Contexts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Abstraction.Contexts.html",
+          "hash": "/qqVmHPeT5ce7U9esjfCltgkUScKDRhj30dFXtP1nhc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Abstraction.Enums.ContextType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Abstraction.Enums.ContextType.html",
+          "hash": "ocUOKoivdc7Tl8VBBPEeILLpLj5BMflcoKep0P79VIs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Abstraction.Enums.IdentityIntegrationType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Abstraction.Enums.IdentityIntegrationType.html",
+          "hash": "z14FFcRGIeb9jGqXUHQ2LUEt1BjMdO/wBJMa8jW13Xs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Abstraction.Enums.SocialProviderType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Abstraction.Enums.SocialProviderType.html",
+          "hash": "JFahBKnaOcUEZbjYBe0K0sJhFHp9axtFuUh8iWRM6gE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Abstraction.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Abstraction.Enums.html",
+          "hash": "QC+R8h4rmwG8gqJ69W5buSo5LubCUWViTuaUHsODtZw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Abstraction.ICursorPagedResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Abstraction.ICursorPagedResult-1.html",
+          "hash": "9F7Aeeq4aOZzeOGzt1Atmd02M6ar5EzMLuy3ucxXC0E="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Abstraction.IPagedResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Abstraction.IPagedResult-1.html",
+          "hash": "6QK/H7y0PUU5ObtAFupK72OadRLRfMT60jhaoSpga3Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Abstraction.Security.IPermission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Abstraction.Security.IPermission.html",
+          "hash": "qBCL7S5vkMr7vDaojrQ+I2ggky+RNNtP+tZ51kZX0lI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Abstraction.Security.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Abstraction.Security.html",
+          "hash": "fmIaz9YoxN8D0I2PTMkPQaL7+i5+HRjQSDmgfWQQB9U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Abstraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Abstraction.html",
+          "hash": "vrk8n+9tmUGZrFaSwZ/vCoHfl/g21m7zvLqysfGQTb4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Contexts.IdentityContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Contexts.IdentityContext.html",
+          "hash": "+Vp3IZ1HwebYjMtkRjkCsdTgykNtrevi0yFhzUaETXw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Contexts.UserContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Contexts.UserContext.html",
+          "hash": "kO+3EFqJGqTUYjC+fcUEsYIO941KVMgBw5PrWS/RHBw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Contexts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Contexts.html",
+          "hash": "nlOtoF+wTSM1lkWgeZowhg/nBGGB0Vf9lmwyalZiHcc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Models.ContextPermission.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Models.ContextPermission.html",
+          "hash": "Ji7lgmu+/100I6H2LjgD+dr98Lx4KHGVYcTto8FaV5w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Models.CursorPagedResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Models.CursorPagedResult-1.html",
+          "hash": "viiOHMvLNHyggvwpU197b9R2tT0uY5pK7U4Gj/3gU6o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Models.PagedResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Models.PagedResult-1.html",
+          "hash": "4WixeWNjpEfHwU19AOn0gF8F9sMjuxlsUTqm6cLJQU8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/core/J789.Library.Core.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/core/J789.Library.Core.Models.html",
+          "hash": "acFHx+iwzGRlKWLx6OsGYJ8h5DV1gQEpDGtEznmJjww="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.Cache.ICacheOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.Cache.ICacheOptions.html",
+          "hash": "DN5Vnxyiklkb0so1Kpd4Xzk4ujis0JTo18LO3Fl46YA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.Cache.ICacheResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.Cache.ICacheResult-1.html",
+          "hash": "cuNKbhUYyQMN8/vv8b+UWPsYcuEIt4OZutks/X3ol04="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.Cache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.Cache.html",
+          "hash": "/Pg5h61PtNmem1sAAeJoEamVxYSdpktisWj6np6IECw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.Entity.IEntity-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.Entity.IEntity-1.html",
+          "hash": "g+eW/wq67TK3BpNvYa9P6kRiJ6GKMAAMBv3VWi4aC+M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.Entity.IEntity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.Entity.IEntity.html",
+          "hash": "x51e6YJ1q81SRCoqcm75PLsSzsiIak3gSb0PkXpWwRI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.Entity.ISoftDelete.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.Entity.ISoftDelete.html",
+          "hash": "OF8JkXvvXa1hBwpfCAOPP6equ6gRGcbboPBzWHdLl2U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.Entity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.Entity.html",
+          "hash": "ioBEsxiDkDzKAdzxSrugHXggSVfr1vOZ2xUmlMuFVQY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.ICacheRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.ICacheRepository.html",
+          "hash": "QeeZhisKEIs9FJyTrqSupaJTJhjOK9U2YGMWJAeCuSw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.IRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.IRepository.html",
+          "hash": "CrMvUndquPRiT1RnvKKLaWj8PYypV+PhbN+eNU2EnVQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.Query.IQueryProjection-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.Query.IQueryProjection-2.html",
+          "hash": "gyEnPcLIFs8I0+wfJ1piOcS2RoA3oxf27PnpD1RGqe4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.Query.ISpecification-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.Query.ISpecification-1.html",
+          "hash": "EULb7XJYWMkl2uyPLNF8fptP/mhNfIlumnHGRCIFKpY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.Query.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.Query.html",
+          "hash": "YZOu2eioRF0GHF5uSyeb/rycL4Oe+7eB+X/EOW9My1w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Abstraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Abstraction.html",
+          "hash": "y0bNf4mjvTJY3IiKEr9hWjNU5aPZyCoIQs+jPed1ikg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Cache.CacheOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Cache.CacheOptions.html",
+          "hash": "HJCT8oPNy7j5BTx3X5t+EiQ0KvXDGGhfRhQfL/SJT38="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Cache.CacheResult-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Cache.CacheResult-1.html",
+          "hash": "a48zWOroSweZvUjDR/6rZAqb5jt0sBBmu4EpNWwsa/8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Cache.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Cache.html",
+          "hash": "A5Ns0nlhHg4fS/jOwka3mQgxSUFwBqfnMtt/FNZjXOg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Caching.DistributedCacheRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Caching.DistributedCacheRepository.html",
+          "hash": "jkvyUGBglWI6FGDIsUURaJNd0wGp0ho5VCZP/AFHLA8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Caching.InMemoryCacheRepository.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Caching.InMemoryCacheRepository.html",
+          "hash": "qOZfZZ8ZfTkkYfo5dd7cjzVMntTlHwDLPHO4TO6qjdw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Caching.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Caching.html",
+          "hash": "TlywfaGauefM3KuIA7gAKTSwDOjVPfv3CpxjR34J0h8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.EFCore.Abstraction.Extensions.IQueryableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.EFCore.Abstraction.Extensions.IQueryableExtensions.html",
+          "hash": "3LMOLxjalw1s4bhbNkHH0ZhktImr7Jqob0Q9yT92VSA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.EFCore.Abstraction.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.EFCore.Abstraction.Extensions.html",
+          "hash": "jRjJXO/I2hy5n3MGfsLKkEtJ2DdJuMXRXT/boGooXUY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.EFCore.Abstraction.IDbContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.EFCore.Abstraction.IDbContext.html",
+          "hash": "NJVklh8Xg11uFXaW7hNH6NsrPYc1MjcxsUeaQHBpvkY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.EFCore.Abstraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.EFCore.Abstraction.html",
+          "hash": "usaNzk6ZUC7X2PPGBOa3DiEbaiEi+7PqqubU2m04Xi8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.EFCore.DbContextBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.EFCore.DbContextBase-1.html",
+          "hash": "zBqxfZNFjyY1awUq5M9odikco2CdvSkyg9zswcWFrc8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.EFCore.EFTransactionManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.EFCore.EFTransactionManager.html",
+          "hash": "g+zx8EDOLri9KfhyHZCAWW6S5eFs9i4EEBSvnu3ZHaw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.EFCore.Repository-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.EFCore.Repository-1.html",
+          "hash": "lEr/WAnHCupEUNO3u57vFCZQ6BELBZZ4EieySM5gjVw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.EFCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.EFCore.html",
+          "hash": "AixxUN5sj4vIUERh/fHcpEV/GrR/9zuyge+h/KJ/rbY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Query.CommonSpecs.CursorPagingSpec-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Query.CommonSpecs.CursorPagingSpec-2.html",
+          "hash": "EqCQ2/mbv1avfWmeSePc5wQGMCJ2dIjFua5VW78kMC0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Query.CommonSpecs.IsActiveSpec-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Query.CommonSpecs.IsActiveSpec-1.html",
+          "hash": "2bSDH2cWsBuDmZbWk7PA3tLZfo5IiZQOCvvItmHb9mA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Query.CommonSpecs.OrderByDir.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Query.CommonSpecs.OrderByDir.html",
+          "hash": "jTVMfMjIP1xFsPk6pP8PbB8IRFf3bKPjn1c4MO9qOvY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Query.CommonSpecs.OrderBySpec-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Query.CommonSpecs.OrderBySpec-1.html",
+          "hash": "KyqClNdVP3YxmvgXqkshV7t3dTgNe8DTSYkCJkD0l7U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Query.CommonSpecs.PaginationSpec-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Query.CommonSpecs.PaginationSpec-1.html",
+          "hash": "1S8A9oSuXYYC6q93vZcSaSfWcPCum+GLn9lgnpmwWBw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Query.CommonSpecs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Query.CommonSpecs.html",
+          "hash": "sndIy2Hj5qJNUxBUtkzuhfYH0rnVjn/YNc0ovG6ZZQQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Query.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Query.Extensions.html",
+          "hash": "TzZZ39742am/cC0BgGFB9LokxqN4wGWnuiB1tRY6rmk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Query.ParameterExpressionVisitor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Query.ParameterExpressionVisitor.html",
+          "hash": "xqW4FIuYONo2jc9dIdqEHEXiksb/KwCWOBPNgmgDTZ4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Query.QueryProjection-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Query.QueryProjection-2.html",
+          "hash": "Ud8AwMxPQFNDwT9l2Trea76SeCaQY0KqlQ0mIUS7IrU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Query.Specification-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Query.Specification-1.html",
+          "hash": "e5y7zYPWgqadllWZAUP1LapLKASdPpOCrMa8rU5J39M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/data/J789.Library.Data.Query.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/data/J789.Library.Data.Query.html",
+          "hash": "4SdKRB94xrhl0pQSUHVseNwkNAlRI6W8VIvRMY0tt7Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/di/J789.Library.DependencyInjection.Abstraction.IDependencyResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/di/J789.Library.DependencyInjection.Abstraction.IDependencyResolver.html",
+          "hash": "8isATSL0xkSZka747Nt+Ds/yaGh800ceLRQxTfynlVI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/di/J789.Library.DependencyInjection.Abstraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/di/J789.Library.DependencyInjection.Abstraction.html",
+          "hash": "/gnIuzUQHAUZUqfpQp86UQn8ZBGY4UFcUXhIuM/39UE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/di/J789.Library.DependencyInjection.Lamar.LamarDependencyResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/di/J789.Library.DependencyInjection.Lamar.LamarDependencyResolver.html",
+          "hash": "n5OoaPG5rq8G5bWgpZG85AiylG2YLonJxeMC1QWMC6Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/di/J789.Library.DependencyInjection.Lamar.LamarDependencyResolverExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/di/J789.Library.DependencyInjection.Lamar.LamarDependencyResolverExtensions.html",
+          "hash": "w2UeKHY+J7mWKUY30njAnh9iCO5NaLcJF1xj47YtLrQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/di/J789.Library.DependencyInjection.Lamar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/di/J789.Library.DependencyInjection.Lamar.html",
+          "hash": "s0sZtMl8054sYTX5etiShryQmheoFms0dU3Y6NQ+j2M="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/di/J789.Library.DependencyInjection.NetCore.NetCoreDependencyResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/di/J789.Library.DependencyInjection.NetCore.NetCoreDependencyResolver.html",
+          "hash": "uVC0N6xv8SKPBGS9J1n5ksGMgEBZwWTeyU6M+O1Yk6o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/di/J789.Library.DependencyInjection.NetCore.NetCoreResolverExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/di/J789.Library.DependencyInjection.NetCore.NetCoreResolverExtensions.html",
+          "hash": "ftNhVgQy5JyYPAFZhiZ/b6zCre7rZk8uQDW2bF2yC64="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/di/J789.Library.DependencyInjection.NetCore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/di/J789.Library.DependencyInjection.NetCore.html",
+          "hash": "MQEygEvYUR7sLFcNoh9MW/GTHermLMKYc0mqCQZgYvY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "2kplWbk1bRJkZymM736H5jsQ6QEpbdpbh5S/iz+vUmY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.Enums.EventStateEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.Enums.EventStateEnum.html",
+          "hash": "TjQuGxC6TiqHh3T1ZD17SyRWnDSbOnrkGpSoa1dHAXQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.Enums.html",
+          "hash": "Cl1nO8XXoDrHMMGDDMXFs2U1+jCK4p+0p+rJqWC/wHQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.IIntegrationEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.IIntegrationEvent.html",
+          "hash": "Srdkb9GdbhZXKPDfV74o18LIrRxlt4SV6B7aVgPB/BE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.IIntegrationEventLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.IIntegrationEventLog.html",
+          "hash": "BkWMF5rmksMc+S6Qmen4VhRUBPep64OusBXFtzn2/xI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IConsumerQueueManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IConsumerQueueManager.html",
+          "hash": "j5nPNiwE73b7029gMorNlAi1K7LixiX5AbuOdzf0tls="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IConsumerQueueManagerConfigurator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IConsumerQueueManagerConfigurator.html",
+          "hash": "689wcUQyeLeN0Tpso+6H+58f037kwqG8IwN/6qEWvrg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IIntegrationEventContext-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IIntegrationEventContext-1.html",
+          "hash": "+ikyuU8p1y8Zza25Svp8aePf0khTj7clwpVLyUg6daA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IIntegrationEventHandler-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IIntegrationEventHandler-1.html",
+          "hash": "NpZZSCUQ102KS1T7G/FL/Ez3KHrvOf1Qf9G1UNnebdA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IIntegrationEventHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IIntegrationEventHandler.html",
+          "hash": "4Jrz6P7fPN5YOin7Jedq/kbhga8eyBZFSMUhr0B3kg0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IIntegrationEventResponseContext-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IIntegrationEventResponseContext-1.html",
+          "hash": "qIPb47WgbN4gi7j7fX7dDwRbzf4jl7jNmWRhgwaUKfk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IQueueInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IQueueInfo.html",
+          "hash": "u21Fn41hcy1sdgv8oXxCStIfYm7PWKTqud35ohn956I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IServiceBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.IServiceBus.html",
+          "hash": "JZqU5/NPlBUmc94EOW9HvDBqoHumgQ8y1vRH2wbRiJk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.ISubscriptionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.ISubscriptionInfo.html",
+          "hash": "DqScoflx+viFwcT4Pma+9xpIsszT1KpC25QGqNep2FU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.ServiceBus.html",
+          "hash": "GYfTGEnTzisJE+//uxS2YGc8ZcUd9rSWTjqKmLZTweA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.Abstraction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.Abstraction.html",
+          "hash": "fIJEKCGo+Ebs8l6pz0SqwHDPU1rHoradupXuIDrdDoA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.IntegrationEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.IntegrationEvent.html",
+          "hash": "7wUmG1U8FtHiUKS3MxZksMAyVr6hsLka+rWMD3/4u8s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.IntegrationEventLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.IntegrationEventLog.html",
+          "hash": "5LcvLZlWwBM0HHDsbmPXR9Cqh+kY0trK6ESy/UWSAT0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.MassTransit.MTBusIntegration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.MassTransit.MTBusIntegration.html",
+          "hash": "DpfMzVa1XmGuqhjGUB/aYdEuC4OsuWEZyt1Obm1f7f8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.MassTransit.MassTransitServiceBus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.MassTransit.MassTransitServiceBus.html",
+          "hash": "alXXXWNbIEYKq28C19n+WJIrYqXPOM2Nf7TzDw7yngw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.MassTransit.QueueManager.ConsumerQueueManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.MassTransit.QueueManager.ConsumerQueueManager.html",
+          "hash": "TJ/ItDY2bfA6NKWYx/V84OyZBl5we7FHN1CeCp7hZ8Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.MassTransit.QueueManager.QueueInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.MassTransit.QueueManager.QueueInfo.html",
+          "hash": "x0TJQY7k78/MkR+XN1lzGIy0WT2HiI72Fckletk+x5s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.MassTransit.QueueManager.SubscriptionInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.MassTransit.QueueManager.SubscriptionInfo.html",
+          "hash": "Ej1JrCi5ZKCweCOapfW/TZxdNnf7Tw6uBlAXsrZ44Q4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.MassTransit.QueueManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.MassTransit.QueueManager.html",
+          "hash": "LJZnXortNo4HNteHJ4ug32gCDK0shC8F90hhi6TbKIs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.MassTransit.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.MassTransit.ServiceCollectionExtensions.html",
+          "hash": "T42Q70KZGIzAFDa0HD5aXDsQ9Y6BRhDtbKSp7l3/kv4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.MassTransit.Wrappers.ConsumerContainer-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.MassTransit.Wrappers.ConsumerContainer-2.html",
+          "hash": "Pe0yWnzPyDCulvp5ioLKJp8SxQy147OVW9Gan4DHkgQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.MassTransit.Wrappers.IntegrationEventContext-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.MassTransit.Wrappers.IntegrationEventContext-1.html",
+          "hash": "XERd8AI7iUDkjE1JugCG39K4TTgS+DEQ2pOZMqLpLx8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.MassTransit.Wrappers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.MassTransit.Wrappers.html",
+          "hash": "226XIe9VuoPqAMgpcXxEI90ciW2WFyKFpDoq00z9Ln0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.MassTransit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.MassTransit.html",
+          "hash": "Z+mlMABLgoiKpRkj4+uQ3/4NdkuXevI9WawiqN2+2Gs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/intg/J789.Library.Integration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/intg/J789.Library.Integration.html",
+          "hash": "1Z/m2eTNEUrvO6RK/A6geLN192Cgil6LuIln2e2yAdg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "Ts6c4ixx8zRfeXnbV16kJM43RiAqOo3cH5mkNP/Scq0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "xtUEjmxwHu8M1VuIVkWlzZO0npyNvpIXd5RSIbHH2bw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "m0XuDKrU2xALNJ6G+YpcNw6io+W0ZTrNUMU1iikTC/k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "FnrPdvxF4uvRBrmXadaslgCVxQ6AY2m4uPOAGXHa0/o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 95,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

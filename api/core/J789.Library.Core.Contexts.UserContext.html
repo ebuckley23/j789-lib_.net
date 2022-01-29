@@ -1,0 +1,1153 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class UserContext
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class UserContext
+   ">
+    <meta name="generator" content="docfx 2.59.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="J789.Library.Core.Contexts.UserContext">
+  
+  
+  <h1 id="J789_Library_Core_Contexts_UserContext" data-uid="J789.Library.Core.Contexts.UserContext" class="text-break">Class UserContext
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="J789.Library.Core.Contexts.IdentityContext.html">IdentityContext</a></div>
+    <div class="level2"><span class="xref">UserContext</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="J789.Library.Core.Abstraction.Contexts.IIdentityContext.html">IIdentityContext</a></div>
+    <div><a class="xref" href="J789.Library.Core.Abstraction.Contexts.IUserContext.html">IUserContext</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="J789.Library.Core.Contexts.IdentityContext.html#J789_Library_Core_Contexts_IdentityContext__claimsPrincipal">IdentityContext._claimsPrincipal</a>
+    </div>
+    <div>
+      <a class="xref" href="J789.Library.Core.Contexts.IdentityContext.html#J789_Library_Core_Contexts_IdentityContext_IdentityIntegrationType">IdentityContext.IdentityIntegrationType</a>
+    </div>
+    <div>
+      <a class="xref" href="J789.Library.Core.Contexts.IdentityContext.html#J789_Library_Core_Contexts_IdentityContext_ContextType">IdentityContext.ContextType</a>
+    </div>
+    <div>
+      <a class="xref" href="J789.Library.Core.Contexts.IdentityContext.html#J789_Library_Core_Contexts_IdentityContext_SetIdentityIntegrationType_J789_Library_Core_Abstraction_Enums_IdentityIntegrationType_">IdentityContext.SetIdentityIntegrationType(IdentityIntegrationType)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="J789.Library.Core.Contexts.html">J789.Library.Core.Contexts</a></h6>
+  <h6><strong>Assembly</strong>: J789.Library.Core.dll</h6>
+  <h5 id="J789_Library_Core_Contexts_UserContext_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UserContext : IdentityContext, IIdentityContext, IUserContext</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext__ctor_Microsoft_Extensions_Configuration_IConfiguration_System_Security_Claims_ClaimsPrincipal_.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.%23ctor(Microsoft.Extensions.Configuration.IConfiguration%2CSystem.Security.Claims.ClaimsPrincipal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L37">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext__ctor_" data-uid="J789.Library.Core.Contexts.UserContext.#ctor*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext__ctor_Microsoft_Extensions_Configuration_IConfiguration_System_Security_Claims_ClaimsPrincipal_" data-uid="J789.Library.Core.Contexts.UserContext.#ctor(Microsoft.Extensions.Configuration.IConfiguration,System.Security.Claims.ClaimsPrincipal)">UserContext(IConfiguration, ClaimsPrincipal)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserContext(IConfiguration configuration, ClaimsPrincipal claimsPrincipal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Security.Claims.ClaimsPrincipal</span></td>
+        <td><span class="parametername">claimsPrincipal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext__ctor_Microsoft_Extensions_Configuration_IConfiguration_System_Security_Claims_ClaimsPrincipal_J789_Library_Core_Abstraction_Enums_ContextType_.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.%23ctor(Microsoft.Extensions.Configuration.IConfiguration%2CSystem.Security.Claims.ClaimsPrincipal%2CJ789.Library.Core.Abstraction.Enums.ContextType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L43">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext__ctor_" data-uid="J789.Library.Core.Contexts.UserContext.#ctor*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext__ctor_Microsoft_Extensions_Configuration_IConfiguration_System_Security_Claims_ClaimsPrincipal_J789_Library_Core_Abstraction_Enums_ContextType_" data-uid="J789.Library.Core.Contexts.UserContext.#ctor(Microsoft.Extensions.Configuration.IConfiguration,System.Security.Claims.ClaimsPrincipal,J789.Library.Core.Abstraction.Enums.ContextType)">UserContext(IConfiguration, ClaimsPrincipal, ContextType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserContext(IConfiguration configuration, ClaimsPrincipal claimsPrincipal, ContextType contextType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Configuration.IConfiguration</span></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Security.Claims.ClaimsPrincipal</span></td>
+        <td><span class="parametername">claimsPrincipal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="J789.Library.Core.Abstraction.Enums.ContextType.html">ContextType</a></td>
+        <td><span class="parametername">contextType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext__ctor_System_Security_Claims_ClaimsPrincipal_.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.%23ctor(System.Security.Claims.ClaimsPrincipal)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L30">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext__ctor_" data-uid="J789.Library.Core.Contexts.UserContext.#ctor*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext__ctor_System_Security_Claims_ClaimsPrincipal_" data-uid="J789.Library.Core.Contexts.UserContext.#ctor(System.Security.Claims.ClaimsPrincipal)">UserContext(ClaimsPrincipal)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserContext(ClaimsPrincipal claimsPrincipal)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Security.Claims.ClaimsPrincipal</span></td>
+        <td><span class="parametername">claimsPrincipal</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext__ctor_System_Security_Claims_ClaimsPrincipal_J789_Library_Core_Abstraction_Enums_ContextType_.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.%23ctor(System.Security.Claims.ClaimsPrincipal%2CJ789.Library.Core.Abstraction.Enums.ContextType)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L49">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext__ctor_" data-uid="J789.Library.Core.Contexts.UserContext.#ctor*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext__ctor_System_Security_Claims_ClaimsPrincipal_J789_Library_Core_Abstraction_Enums_ContextType_" data-uid="J789.Library.Core.Contexts.UserContext.#ctor(System.Security.Claims.ClaimsPrincipal,J789.Library.Core.Abstraction.Enums.ContextType)">UserContext(ClaimsPrincipal, ContextType)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UserContext(ClaimsPrincipal claimsPrincipal, ContextType contextType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Security.Claims.ClaimsPrincipal</span></td>
+        <td><span class="parametername">claimsPrincipal</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="J789.Library.Core.Abstraction.Enums.ContextType.html">ContextType</a></td>
+        <td><span class="parametername">contextType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="fields">Fields
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext__claims.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext._claims%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L16">View Source</a>
+  </span>
+  <h4 id="J789_Library_Core_Contexts_UserContext__claims" data-uid="J789.Library.Core.Contexts.UserContext._claims">_claims</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected readonly IEnumerable&lt;Claim&gt; _claims</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Security.Claims.Claim</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_ADDITIONAL_PROPERTIES_CONFIG_PROP.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.ADDITIONAL_PROPERTIES_CONFIG_PROP%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L24">View Source</a>
+  </span>
+  <h4 id="J789_Library_Core_Contexts_UserContext_ADDITIONAL_PROPERTIES_CONFIG_PROP" data-uid="J789.Library.Core.Contexts.UserContext.ADDITIONAL_PROPERTIES_CONFIG_PROP">ADDITIONAL_PROPERTIES_CONFIG_PROP</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string ADDITIONAL_PROPERTIES_CONFIG_PROP = &quot;Core:UserContext:AdditionalProperties&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_TENANT_CONFIG_ID_PROP.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.TENANT_CONFIG_ID_PROP%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L20">View Source</a>
+  </span>
+  <h4 id="J789_Library_Core_Contexts_UserContext_TENANT_CONFIG_ID_PROP" data-uid="J789.Library.Core.Contexts.UserContext.TENANT_CONFIG_ID_PROP">TENANT_CONFIG_ID_PROP</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TENANT_CONFIG_ID_PROP = &quot;Core:UserContext:TenantIdConfig&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_TENANT_CONFIG_NAME_PROP.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.TENANT_CONFIG_NAME_PROP%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L21">View Source</a>
+  </span>
+  <h4 id="J789_Library_Core_Contexts_UserContext_TENANT_CONFIG_NAME_PROP" data-uid="J789.Library.Core.Contexts.UserContext.TENANT_CONFIG_NAME_PROP">TENANT_CONFIG_NAME_PROP</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TENANT_CONFIG_NAME_PROP = &quot;Core:UserContext:TenantNameConfig&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_TENANT_CONFIG_OWNERID_PROP.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.TENANT_CONFIG_OWNERID_PROP%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L22">View Source</a>
+  </span>
+  <h4 id="J789_Library_Core_Contexts_UserContext_TENANT_CONFIG_OWNERID_PROP" data-uid="J789.Library.Core.Contexts.UserContext.TENANT_CONFIG_OWNERID_PROP">TENANT_CONFIG_OWNERID_PROP</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TENANT_CONFIG_OWNERID_PROP = &quot;Core:UserContext:TenantOwnerIdConfig&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_TENANT_CONFIG_PERMISSION_PROP.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.TENANT_CONFIG_PERMISSION_PROP%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L23">View Source</a>
+  </span>
+  <h4 id="J789_Library_Core_Contexts_UserContext_TENANT_CONFIG_PERMISSION_PROP" data-uid="J789.Library.Core.Contexts.UserContext.TENANT_CONFIG_PERMISSION_PROP">TENANT_CONFIG_PERMISSION_PROP</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string TENANT_CONFIG_PERMISSION_PROP = &quot;Core:UserContext:TenantPermissionConfig&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_USER_CONTEXT_CONFIG_PATH.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.USER_CONTEXT_CONFIG_PATH%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L19">View Source</a>
+  </span>
+  <h4 id="J789_Library_Core_Contexts_UserContext_USER_CONTEXT_CONFIG_PATH" data-uid="J789.Library.Core.Contexts.UserContext.USER_CONTEXT_CONFIG_PATH">USER_CONTEXT_CONFIG_PATH</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public const string USER_CONTEXT_CONFIG_PATH = &quot;Core:UserContext&quot;</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_Email.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.Email%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L96">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_Email_" data-uid="J789.Library.Core.Contexts.UserContext.Email*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_Email" data-uid="J789.Library.Core.Contexts.UserContext.Email">Email</h4>
+  <div class="markdown level1 summary"><p>User's email address</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Email { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_FirstName.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.FirstName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L109">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_FirstName_" data-uid="J789.Library.Core.Contexts.UserContext.FirstName*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_FirstName" data-uid="J789.Library.Core.Contexts.UserContext.FirstName">FirstName</h4>
+  <div class="markdown level1 summary"><p>User's Firstname</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FirstName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_IDProvider.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.IDProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L57">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_IDProvider_" data-uid="J789.Library.Core.Contexts.UserContext.IDProvider*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_IDProvider" data-uid="J789.Library.Core.Contexts.UserContext.IDProvider">IDProvider</h4>
+  <div class="markdown level1 summary"><p>User's Identity Provider (Ex. Google, Facebook)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string IDProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_IsTenantOwner.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.IsTenantOwner%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L164">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_IsTenantOwner_" data-uid="J789.Library.Core.Contexts.UserContext.IsTenantOwner*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_IsTenantOwner" data-uid="J789.Library.Core.Contexts.UserContext.IsTenantOwner">IsTenantOwner</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsTenantOwner { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_LastName.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.LastName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L124">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_LastName_" data-uid="J789.Library.Core.Contexts.UserContext.LastName*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_LastName" data-uid="J789.Library.Core.Contexts.UserContext.LastName">LastName</h4>
+  <div class="markdown level1 summary"><p>User's Lastname</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LastName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_Name.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L82">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_Name_" data-uid="J789.Library.Core.Contexts.UserContext.Name*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_Name" data-uid="J789.Library.Core.Contexts.UserContext.Name">Name</h4>
+  <div class="markdown level1 summary"><p>User's full name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_Permissions.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.Permissions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L167">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_Permissions_" data-uid="J789.Library.Core.Contexts.UserContext.Permissions*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_Permissions" data-uid="J789.Library.Core.Contexts.UserContext.Permissions">Permissions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual IEnumerable&lt;IPermission&gt; Permissions { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<a class="xref" href="J789.Library.Core.Abstraction.Security.IPermission.html">IPermission</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_SocialProvider.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.SocialProvider%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L183">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_SocialProvider_" data-uid="J789.Library.Core.Contexts.UserContext.SocialProvider*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_SocialProvider" data-uid="J789.Library.Core.Contexts.UserContext.SocialProvider">SocialProvider</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual SocialProviderType SocialProvider { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="J789.Library.Core.Abstraction.Enums.SocialProviderType.html">SocialProviderType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_SubjectId.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.SubjectId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L69">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_SubjectId_" data-uid="J789.Library.Core.Contexts.UserContext.SubjectId*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_SubjectId" data-uid="J789.Library.Core.Contexts.UserContext.SubjectId">SubjectId</h4>
+  <div class="markdown level1 summary"><p>User's Unique Identifier</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SubjectId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_TenantId.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.TenantId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L135">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_TenantId_" data-uid="J789.Library.Core.Contexts.UserContext.TenantId*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_TenantId" data-uid="J789.Library.Core.Contexts.UserContext.TenantId">TenantId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string TenantId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_TenantName.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.TenantName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L145">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_TenantName_" data-uid="J789.Library.Core.Contexts.UserContext.TenantName*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_TenantName" data-uid="J789.Library.Core.Contexts.UserContext.TenantName">TenantName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string TenantName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_TenantOwnerId.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.TenantOwnerId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L154">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_TenantOwnerId_" data-uid="J789.Library.Core.Contexts.UserContext.TenantOwnerId*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_TenantOwnerId" data-uid="J789.Library.Core.Contexts.UserContext.TenantOwnerId">TenantOwnerId</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string TenantOwnerId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_UserName.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.UserName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L181">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_UserName_" data-uid="J789.Library.Core.Contexts.UserContext.UserName*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_UserName" data-uid="J789.Library.Core.Contexts.UserContext.UserName">UserName</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string UserName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_AsAnonymous.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.AsAnonymous%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L191">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_AsAnonymous_" data-uid="J789.Library.Core.Contexts.UserContext.AsAnonymous*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_AsAnonymous" data-uid="J789.Library.Core.Contexts.UserContext.AsAnonymous">AsAnonymous()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IUserContext AsAnonymous()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="J789.Library.Core.Abstraction.Contexts.IUserContext.html">IUserContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_Get_System_String_.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.Get(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L209">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_Get_" data-uid="J789.Library.Core.Contexts.UserContext.Get*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_Get_System_String_" data-uid="J789.Library.Core.Contexts.UserContext.Get(System.String)">Get(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Get(string property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_GetAll_System_String_.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.GetAll(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L215">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_GetAll_" data-uid="J789.Library.Core.Contexts.UserContext.GetAll*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_GetAll_System_String_" data-uid="J789.Library.Core.Contexts.UserContext.GetAll(System.String)">GetAll(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; GetAll(string property)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">property</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_HasPermission_J789_Library_Core_Abstraction_Security_IPermission_.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.HasPermission(J789.Library.Core.Abstraction.Security.IPermission)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L186">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_HasPermission_" data-uid="J789.Library.Core.Contexts.UserContext.HasPermission*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_HasPermission_J789_Library_Core_Abstraction_Security_IPermission_" data-uid="J789.Library.Core.Contexts.UserContext.HasPermission(J789.Library.Core.Abstraction.Security.IPermission)">HasPermission(IPermission)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPermission(IPermission permission)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="J789.Library.Core.Abstraction.Security.IPermission.html">IPermission</a></td>
+        <td><span class="parametername">permission</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext_HasPermissions_J789_Library_Core_Abstraction_Security_IPermission___.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext.HasPermissions(J789.Library.Core.Abstraction.Security.IPermission%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L194">View Source</a>
+  </span>
+  <a id="J789_Library_Core_Contexts_UserContext_HasPermissions_" data-uid="J789.Library.Core.Contexts.UserContext.HasPermissions*"></a>
+  <h4 id="J789_Library_Core_Contexts_UserContext_HasPermissions_J789_Library_Core_Abstraction_Security_IPermission___" data-uid="J789.Library.Core.Contexts.UserContext.HasPermissions(J789.Library.Core.Abstraction.Security.IPermission[])">HasPermissions(IPermission[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasPermissions(params IPermission[] permissions)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="J789.Library.Core.Abstraction.Security.IPermission.html">IPermission</a>[]</td>
+        <td><span class="parametername">permissions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="J789.Library.Core.Abstraction.Contexts.IIdentityContext.html">IIdentityContext</a>
+  </div>
+  <div>
+      <a class="xref" href="J789.Library.Core.Abstraction.Contexts.IUserContext.html">IUserContext</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ebuckley23/j789-lib_.net/new/master/apiSpec/new?filename=J789_Library_Core_Contexts_UserContext.md&amp;value=---%0Auid%3A%20J789.Library.Core.Contexts.UserContext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/ebuckley23/j789-lib_.net/blob/master/J789.Library.Core/Contexts/UserContext.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
