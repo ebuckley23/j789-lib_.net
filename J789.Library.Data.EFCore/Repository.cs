@@ -122,7 +122,7 @@ namespace J789.Library.Data.EFCore
         private IQueryable<TEntity> ApplySpecification<TEntity>(ISpecification<TEntity> spec)
             where TEntity : class, IEntity
         {
-            return SpecificationEvaluator<TEntity>.GetQuery(_context.Set<TEntity>(), spec);
+            return SpecificationEvaluator.GetQuery(_context.Set<TEntity>(), spec);
         }
         #endregion
     }

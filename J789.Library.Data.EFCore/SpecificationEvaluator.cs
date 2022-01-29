@@ -6,9 +6,10 @@ using System.Linq;
 
 namespace J789.Library.Data.EFCore
 {
-    internal class SpecificationEvaluator<TEntity> where TEntity : class, IEntity
+    internal class SpecificationEvaluator
     {
-        public static IQueryable<TEntity> GetQuery(IQueryable<TEntity> query, ISpecification<TEntity> specification)
+        public static IQueryable<TEntity> GetQuery<TEntity>(IQueryable<TEntity> query, ISpecification<TEntity> specification)
+            where TEntity : class, IEntity
         {
             var ret = query;
             if (specification.Criteria != null)
@@ -38,6 +39,13 @@ namespace J789.Library.Data.EFCore
             {
                 ret = ret.Skip(specification.Skip).Take(specification.Take);
             }
+
+            if (specification.IsCursorPagingEnabled)
+            {
+                ret = ret.OrderBy(specification.OrderBy)
+                    .Take(specification.Take);
+            }
+
             return ret.TagWithSource();
         }
     }

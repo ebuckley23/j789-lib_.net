@@ -41,5 +41,9 @@ namespace J789.Library.Data.Abstraction.Query
         /// Enable paging
         /// </summary>
         bool IsPagingEnabled { get; }
+        /// <summary>
+        /// Enable cursor paging
+        /// </summary>
+        bool IsCursorPagingEnabled { get; }
     }
 }

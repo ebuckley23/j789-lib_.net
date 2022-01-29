@@ -3,19 +3,76 @@
     {
       "src": [
         {
-		  "src": "../",
+          "src": "../",
           "files": [
-            "**.csproj"
+            "**Library.Core**.csproj"
           ],
-		  "exclude": [
-			"**/bin/**",
-			"**/obj/**",
-			"_site/**",
-			"**Tests.csproj"
-		  ]
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "_site/**",
+            "**Tests.csproj"
+          ]
         }
       ],
-      "dest": "api",
+      "dest": "api/core",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "src": "../",
+          "files": [
+            "**Library.Data**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "_site/**",
+            "**Tests.csproj"
+          ]
+        }
+      ],
+      "dest": "api/data",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "src": "../",
+          "files": [
+            "**Library.DependencyInjection**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "_site/**",
+            "**Tests.csproj"
+          ]
+        }
+      ],
+      "dest": "api/di",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    },
+    {
+      "src": [
+        {
+          "src": "../",
+          "files": [
+            "**Library.Integration**.csproj"
+          ],
+          "exclude": [
+            "**/bin/**",
+            "**/obj/**",
+            "_site/**",
+            "**Tests.csproj"
+          ]
+        }
+      ],
+      "dest": "api/intg",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
     }
@@ -35,10 +92,7 @@
           "toc.yml",
           "*.md"
         ]
-      },
-	  {
-		"files": "fusion/**"
-	  }
+      }
     ],
     "resource": [
       {
