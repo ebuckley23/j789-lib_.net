@@ -87,7 +87,7 @@ jobs:
           name: ${{ env.NUPKG_ARTIFACT }}
         continue-on-error: false
       - name: add github nuget source
-        run: dotnet nuget add source https://nuget.pkg.github.com/${{ env.GITHUB_REPO_OWNER }}/index.json -- name github
+        run: dotnet nuget add source https://nuget.pkg.github.com/${{ env.GITHUB_REPO_OWNER }}/index.json --name github
       - name: push github nuget source
         run: dotnet nuget push "**/*.nupkg" --source github --api-key ${{ env.GITHUB_TOKEN }} --skip-duplicate
   # generate documentation
