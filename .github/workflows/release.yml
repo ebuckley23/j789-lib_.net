@@ -23,7 +23,7 @@ env:
   # Disable sending usage data to Microsoft
   DOTNET_CLI_TELEMETRY_OPTOUT: true
   GITHUB_TOKEN: ${{ github.token }}
-  GITHUB_REPO_OWNER: ${{ github.repository.owner }}
+  GITHUB_REPO_OWNER: ${{ github.repository_owner }}
   NUPKG_ARTIFACT: nupkgs
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
