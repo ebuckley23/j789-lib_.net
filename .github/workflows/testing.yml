@@ -25,6 +25,6 @@ jobs:
 
       - name: read version.json
         run: |
-          cat version.json >> $MY_ENV
+          cat version.json >> "$MY_ENV"
       - name: echo my_env
         run: echo $MY_ENV
