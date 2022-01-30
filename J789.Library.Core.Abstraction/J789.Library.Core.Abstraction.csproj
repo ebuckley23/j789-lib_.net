@@ -4,10 +4,27 @@
     <TargetFramework>net5.0</TargetFramework>
     <Authors>Emmanuel Buckley</Authors>
     <Product>j789</Product>
-    <Description>Package containing interface abstractions for j789.Library.Core library</Description>
+    <Description>Package containing interface abstractions for core library</Description>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/ebuckley23/j789-lib_.net</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://ebuckley23.github.io/j789-lib_.net/</PackageProjectUrl>
+    <PackageIcon>j789 library logo@128x128.png</PackageIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\assets\j789 library logo@128x128.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Nerdbank.GitVersioning" Version="3.4.255">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 
 </Project>
