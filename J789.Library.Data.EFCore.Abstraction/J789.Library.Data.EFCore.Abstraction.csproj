@@ -9,7 +9,7 @@
     <Product>j789</Product>
     <PackageProjectUrl>https://ebuckley23.github.io/j789-lib_.net/</PackageProjectUrl>
     <PackageIcon>j789 library logo@128x128.png</PackageIcon>
-    <RepositoryType>https://github.com/ebuckley23/j789-lib_.net</RepositoryType>
+    <RepositoryType>git</RepositoryType>
     <PackageTags>git</PackageTags>
     <RepositoryUrl>https://github.com/ebuckley23/j789-lib_.net</RepositoryUrl>
   </PropertyGroup>

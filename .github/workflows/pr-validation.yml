@@ -1,0 +1,45 @@
+name: j789 lib pr validation
+
+# only run on pull requests to master or development branches
+# and only when actual library or lib version changes occur
+on:
+  pull_request:
+    branches: [ master, development ]
+    paths:
+      - 'J789*/**' # at least one modified file matches configured path
+      - 'version.json' # updating Nerdbank.GitVersioning should trigger also
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        dotnet-version: [ '5.0.x' ]
+        os: [ ubuntu-latest, windows-latest, macos-latest ]
+    steps:
+      # checkout files
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # avoid shallow clone so nbgv works
+      # setup dotnet core versions
+      - name: setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: 5.0.x
+      - uses: actions/cache@v2
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget
+      - name: dotnet restore
+        run: dotnet restore
+      - name: dotnet build
+        run: dotnet build --configuration Release --no-restore
+      - name: dotnet test
+        run: dotnet test --no-restore --verbosity normal --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
+        continue-on-error: false
+

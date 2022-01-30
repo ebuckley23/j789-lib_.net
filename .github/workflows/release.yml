@@ -1,4 +1,4 @@
-name: J789 Library Release
+name: j789 lib release
 
 # Controls when the workflow will run
 on:
@@ -8,11 +8,6 @@ on:
     paths:
       - 'J789*/**' # at least one modified file matches configured path
       - 'version.json' # updating Nerdbank.GitVersioning should trigger also
-  # pull_request:
-    # branches: [ master, development ]
-    # paths:
-      # - 'J789*/**' # at least one modified file matches configured path
-      # - 'version.json'
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -26,11 +21,7 @@ env:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        dotnet-version: [ '5.0.x' ]
-        os: [ ubuntu-latest, windows-latest, macos-latest ]
+    runs-on: ubuntu-latest
     steps:
       # checkout files
       - name: checkout
@@ -52,14 +43,11 @@ jobs:
         run: dotnet restore
       - name: dotnet build
         run: dotnet build --configuration Release --no-restore
-      - name: dotnet test
-        run: dotnet test --no-restore --verbosity normal --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
-        continue-on-error: false
       - name: dotnet pack
-        if: matrix.os == 'ubuntu-latest' # only run once during the ubuntu run
+        # if: matrix.os == 'ubuntu-latest' # only run once during the ubuntu run
         run: dotnet pack -v normal -c Release --no-restore --include-symbols --include-source -p:SymbolPackageFormat=snupkg
       - name: upload nuget package artifacts
-        if: matrix.os == 'ubuntu-latest'
+        # if: matrix.os == 'ubuntu-latest'
         uses: actions/upload-artifact@v2.2.1
         with:
           name: ${{ env.NUPKG_ARTIFACT }}
@@ -128,7 +116,6 @@ jobs:
         run: docfx docfx.json
         continue-on-error: false
       - name: Publish
-        if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
