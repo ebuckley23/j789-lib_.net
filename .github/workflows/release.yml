@@ -1,27 +1,34 @@
-# This is a basic workflow to help you get started with Actions
-
-name: J789 Library Release
+name: j789 lib release
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push events but only for the master branch
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    branches: [ master, development ]
+    paths:
+      - 'J789*/**' # at least one modified file matches configured path
+      - 'version.json' # updating Nerdbank.GitVersioning should trigger also
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+env:
+  # Disable sending usage data to Microsoft
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
+  GITHUB_TOKEN: ${{ github.token }}
+  GITHUB_REPO_OWNER: ${{ github.repository_owner }}
+  NUPKG_ARTIFACT: nupkgs
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        dotnet-version: [ '5.0.x' ]
     steps:
-      - uses: actions/checkout@v2
+      # checkout files
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # avoid shallow clone so nbgv works
+      # setup dotnet core versions
       - name: setup dotnet
         uses: actions/setup-dotnet@v1
         with:
@@ -36,19 +43,59 @@ jobs:
         run: dotnet restore
       - name: dotnet build
         run: dotnet build --configuration Release --no-restore
-      - name: dotnet test
-        run: dotnet test --no-restore --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
-        continue-on-error: false
-      - name: Upload test results
-        uses: actions/upload-artifact@v2
+      - name: dotnet pack
+        # if: matrix.os == 'ubuntu-latest' # only run once during the ubuntu run
+        run: dotnet pack -v normal -c Release --no-restore --include-symbols --include-source -p:SymbolPackageFormat=snupkg
+      - name: upload nuget package artifacts
+        # if: matrix.os == 'ubuntu-latest'
+        uses: actions/upload-artifact@v2.2.1
         with:
-          name: dotnet-results-${{ matrix.dotnet-version }}
-          path: TestResults-${{ matrix.dotnet-version }}
-        if: ${{ always() }}
+          name: ${{ env.NUPKG_ARTIFACT }}
+          path: "**/*.nupkg"
+        continue-on-error: false
+      
+      #- name: Upload test results
+      #  uses: actions/upload-artifact@v2
+      #  with:
+      #    name: dotnet-results-${{ matrix.dotnet-version }}
+      #    path: TestResults-${{ matrix.dotnet-version }}
+      #  if: ${{ always() }}
+  # prerelease nuget packages
+  prelease:
+    if: github.event.ref == 'refs/heads/development'
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - name: download nuget artifacts
+        uses: actions/download-artifact@v1
+        with:
+          name: ${{ env.NUPKG_ARTIFACT }}
+        continue-on-error: false
+      - name: add github nuget source
+        run: dotnet nuget add source https://nuget.pkg.github.com/${{ env.GITHUB_REPO_OWNER }}/index.json --name github
+      - name: push github nuget source
+        run: dotnet nuget push "**/*.nupkg" --source github --api-key ${{ env.GITHUB_TOKEN }} --skip-duplicate
+  # release nuget package
+  release:
+    if:  github.event.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - name: download nuget artifacts
+        uses: actions/download-artifact@v1
+        with:
+          name: ${{ env.NUPKG_ARTIFACT }}
+        continue-on-error: false
+      - name: add github nuget source
+        run: dotnet nuget add source https://nuget.pkg.github.com/${{ env.GITHUB_REPO_OWNER }}/index.json -- name github
+      - name: push github nuget source
+        run: dotnet nuget push "**/*.nupkg" --source github --api-key ${{ env.GITHUB_TOKEN }} --skip-duplicate
   # generate documentation
   generate-docs:
+    if: github.event.ref == 'refs/heads/master'
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
+    needs: [release]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -69,7 +116,6 @@ jobs:
         run: docfx docfx.json
         continue-on-error: false
       - name: Publish
-        if: github.event_name == 'push'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
