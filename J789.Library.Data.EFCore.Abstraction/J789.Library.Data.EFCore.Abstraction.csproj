@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -11,6 +11,7 @@
     <PackageIcon>j789 library logo@128x128.png</PackageIcon>
     <RepositoryType>https://github.com/ebuckley23/j789-lib_.net</RepositoryType>
     <PackageTags>git</PackageTags>
+    <RepositoryUrl>https://github.com/ebuckley23/j789-lib_.net</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
