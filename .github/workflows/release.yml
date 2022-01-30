@@ -61,7 +61,7 @@ jobs:
         if: matrix.os == 'ubuntu-latest' # only run once during the ubuntu run
         run: dotnet pack -v normal -c Release --no-restore --include-symbols --include-source -p:SymbolPackageFormat=snupkg
       - name: upload nuget package artifacts
-        if: matrix.os == 'ubuntu-latest
+        if: matrix.os == 'ubuntu-latest'
         uses: actions/upload-artifact@v2.2.1
         with:
           name: ${{ env.NUPKG_ARTIFACT }}
