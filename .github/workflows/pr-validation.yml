@@ -41,14 +41,19 @@ jobs:
         run: dotnet build --configuration Release --no-restore
       - name: dotnet test
         run: dotnet test --configuration Release --no-restore --verbosity normal --logger trx --collect:"XPlat Code Coverage" --results-directory ./coverage
+      - name: merge code coverage reports
+        if: matrix.os == 'ubuntu-latest'
+        run: |
+          dotnet tool install -g dotnet-reportgenerator-globaltool
+          reportgenerator -reports:coverage/**/coverage.cobertura.xml -targetdir:merge/codecoverage -reporttypes:'Cobertura'
       - name: copy coverage to predictable location
         if: matrix.os == 'ubuntu-latest' # only run during the ubuntu run
-        run: cp coverage/**/coverage.cobertura.xml coverage.cobertura.xml
+        run: cp merge/codecoverage/coverage.cobertura.xml coverage/coverage.cobertura.xml
       - name: code coverage summary report
         if: matrix.os == 'ubuntu-latest' # only run during the ubuntu run
         uses: irongut/CodeCoverageSummary@v1.2.0
         with:
-          filename: coverage.cobertura.xml
+          filename: coverage/coverage.cobertura.xml
           badge: true
           format: 'md'
           output: 'both'
