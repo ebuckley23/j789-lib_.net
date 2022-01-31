@@ -6,9 +6,9 @@ name: version validation
 on:
   pull_request:
     branches: [ master ]
-      paths:
-        - 'J789*/**' # at least one modified file matches configured path
-        - 'version.json' # updating Nerdbank.GitVersioning should trigger also
+    paths:
+      - 'J789*/**' # at least one modified file matches configured path
+      - 'version.json' # updating Nerdbank.GitVersioning should trigger also
 
   workflow_dispatch:
 
