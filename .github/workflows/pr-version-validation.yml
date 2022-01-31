@@ -1,0 +1,24 @@
+name: version validation
+
+# only run on pull requests to master as Nerdbank.Gitversioning
+# is configured to use commit has for development merge so there will
+# not be any classes in development branch
+on:
+  pull_request:
+    branches: [ master ]
+      paths:
+        - 'J789*/**' # at least one modified file matches configured path
+        - 'version.json' # updating Nerdbank.GitVersioning should trigger also
+
+  workflow_dispatch:
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: validate version change
+        uses: ebuckley23/nb.gitversioning_validation@v1.3
+        with:
+          branch-name: '${{ github.base_ref }}'

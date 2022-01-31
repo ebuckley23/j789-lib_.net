@@ -1,4 +1,4 @@
-name: j789 lib pr validation
+name: tests validation
 
 # only run on pull requests to master or development branches
 # and only when actual library or lib version changes occur
@@ -40,6 +40,21 @@ jobs:
       - name: dotnet build
         run: dotnet build --configuration Release --no-restore
       - name: dotnet test
-        run: dotnet test --no-restore --verbosity normal --logger trx --results-directory "TestResults-${{ matrix.dotnet-version }}"
-        continue-on-error: false
+        run: dotnet test --configuration Release --no-restore --verbosity normal --logger trx --results-directory ./coverage
+      - name: copy coverage to predictable location
+        run: cp coverage/**/coverage.cobertura.xml coverage/coverage.cobertura.xml
+      - name: code coverage summary report
+        uses: irongut/CodeCoverageSummary@v1.2.0
+        with:
+          filename: coverage/coverage.cobertura.xml
+          badge: true
+          format: 'md'
+          output: 'both'
+      - name: add code coverage pr comment
+        uses: marocchino/sticky-pull-request-comment@v2
+        if: github.event_name == 'pull_request'
+        with:
+          recreate: true
+          path: code-coverage-results.md
+
 
