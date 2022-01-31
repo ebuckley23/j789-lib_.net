@@ -1,4 +1,4 @@
-name: j789 lib release
+name: package release
 
 # Controls when the workflow will run
 on:
@@ -15,6 +15,10 @@ on:
 env:
   # Disable sending usage data to Microsoft
   DOTNET_CLI_TELEMETRY_OPTOUT: true
+  # Disable the .NET logo
+  DOTNET_NOLOGO: true
+  # Disable the .NET first time experience
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
   GITHUB_TOKEN: ${{ github.token }}
   GITHUB_REPO_OWNER: ${{ github.repository_owner }}
   NUPKG_ARTIFACT: nupkgs
@@ -44,22 +48,13 @@ jobs:
       - name: dotnet build
         run: dotnet build --configuration Release --no-restore
       - name: dotnet pack
-        # if: matrix.os == 'ubuntu-latest' # only run once during the ubuntu run
         run: dotnet pack -v normal -c Release --no-restore --include-symbols --include-source -p:SymbolPackageFormat=snupkg
       - name: upload nuget package artifacts
-        # if: matrix.os == 'ubuntu-latest'
         uses: actions/upload-artifact@v2.2.1
         with:
           name: ${{ env.NUPKG_ARTIFACT }}
           path: "**/*.nupkg"
         continue-on-error: false
-      
-      #- name: Upload test results
-      #  uses: actions/upload-artifact@v2
-      #  with:
-      #    name: dotnet-results-${{ matrix.dotnet-version }}
-      #    path: TestResults-${{ matrix.dotnet-version }}
-      #  if: ${{ always() }}
   # prerelease nuget packages
   prelease:
     if: github.event.ref == 'refs/heads/development'
