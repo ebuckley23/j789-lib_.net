@@ -42,15 +42,18 @@ jobs:
       - name: dotnet test
         run: dotnet test --configuration Release --no-restore --verbosity normal --logger trx --results-directory ./coverage
       - name: copy coverage to predictable location
-        run: cp coverage/**/coverage.cobertura.xml coverage/coverage.cobertura.xml
+        if: matrix.os == 'ubuntu-latest' # only run during the ubuntu run
+        run: cp coverage/**/coverage.cobertura.xml coverage.cobertura.xml
       - name: code coverage summary report
+        if: matrix.os == 'ubuntu-latest' # only run during the ubuntu run
         uses: irongut/CodeCoverageSummary@v1.2.0
         with:
-          filename: coverage/coverage.cobertura.xml
+          filename: coverage.cobertura.xml
           badge: true
           format: 'md'
           output: 'both'
       - name: add code coverage pr comment
+        if: matrix.os == 'ubuntu-latest' # only run during the ubuntu run
         uses: marocchino/sticky-pull-request-comment@v2
         if: github.event_name == 'pull_request'
         with:
