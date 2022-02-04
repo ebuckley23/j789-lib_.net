@@ -1,6 +1,9 @@
-﻿using J789.Library.Integration.Abstraction.ServiceBus;
+﻿using J789.Library.DependencyInjection.NetCore;
+using J789.Library.Integration.Abstraction.ServiceBus;
 using J789.Library.Integration.MassTransit.QueueManager;
+using J789.Library.Integration.MassTransit.Wrappers;
 using J789.Library.Integration.UnitTests.Fakes;
+using Microsoft.Extensions.DependencyInjection;
 using System.Linq;
 using Xunit;
 
@@ -51,6 +54,22 @@ namespace J789.Library.Integration.UnitTests
 
             Assert.NotEmpty(qs);
             Assert.Contains(qs, x => x.QueueName == nameof(Can_Get_All_Queues));
+        }
+
+        [Fact]
+        public void Can_Resolve_Consumer()
+        {
+            var sc = new ServiceCollection();
+            var cqm = new ConsumerQueueManager();
+            var di = new NetCoreDependencyResolver(sc);
+
+            di.RegisterScoped(typeof(TestIntegrationEventHandler), new TestIntegrationEventHandler());
+
+            var si = new SubscriptionInfo(typeof(TestIntegrationEventHandler), typeof(IUserCreatedIE));
+
+            var instance = cqm.GetConsumer(di, si);
+
+            Assert.Equal(typeof(ConsumerContainer<IUserCreatedIE, TestIntegrationEventHandler>), instance.GetType());
         }
     }
 }

@@ -62,8 +62,8 @@ namespace J789.Library.Integration
         /// </summary>
         [JsonProperty]
         public Guid? ExperienceId { get; private set; }
-        public void SetExperience(Guid experienceId) => ExperienceId = experienceId;
-        public void SetConversation(Guid conversationId) => ConversationId = conversationId;
+        public void SetExperienceId(Guid experienceId) => ExperienceId = experienceId;
+        public void SetConversationId(Guid conversationId) => ConversationId = conversationId;
         public void SetCorrelationId(Guid correlationId) => CorrelationId = correlationId;
     }
 }

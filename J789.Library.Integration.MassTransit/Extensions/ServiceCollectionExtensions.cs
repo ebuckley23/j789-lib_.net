@@ -19,11 +19,10 @@ namespace J789.Library.Integration.MassTransit
             Action<IConsumerQueueManagerConfigurator> config,
             string hostUri,
             bool isTls,
-            MTBusIntegration mTBusIntegration,
+            MTBusIntegration mTBusIntegration = MTBusIntegration.RabbitMQ,
             IDependencyResolver resolver = null)
         {
             var containerResolver = resolver ?? services.ToResolver();
-            var t = new InMemoryTestHarness();
 
             var qManager = new ConsumerQueueManager();
             config(qManager);
