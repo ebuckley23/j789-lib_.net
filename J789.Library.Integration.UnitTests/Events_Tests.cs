@@ -15,8 +15,8 @@ namespace J789.Library.Integration.UnitTests
 
             var intgEvent = new IntegrationEvent();
             intgEvent.SetCorrelationId(corId);
-            intgEvent.SetExperience(expId);
-            intgEvent.SetConversation(convId);
+            intgEvent.SetExperienceId(expId);
+            intgEvent.SetConversationId(convId);
 
             var intgEventLog = new IntegrationEventLog(intgEvent);
             Assert.Null(intgEventLog.IntegrationEvent);

@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="MassTransit" Version="7.3.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
     <PackageReference Include="Moq" Version="4.16.1" />
     <PackageReference Include="xunit" Version="2.4.1" />
@@ -22,6 +23,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\J789.Library.DependencyInjection.Lamar\J789.Library.DependencyInjection.Lamar.csproj" />
+    <ProjectReference Include="..\J789.Library.DependencyInjection.NetCore\J789.Library.DependencyInjection.NetCore.csproj" />
     <ProjectReference Include="..\J789.Library.Integration.Abstraction\J789.Library.Integration.Abstraction.csproj" />
     <ProjectReference Include="..\J789.Library.Integration.MassTransit\J789.Library.Integration.MassTransit.csproj" />
     <ProjectReference Include="..\J789.Library.Integration\J789.Library.Integration.csproj" />
