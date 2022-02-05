@@ -12,9 +12,19 @@ namespace J789.Library.Data.Query.CommonSpecs
             else ApplyOrderByDescending(orderBy);
         }
 
+        /// <summary>
+        /// Order by ascending specification
+        /// </summary>
+        /// <param name="orderBy"></param>
+        /// <returns></returns>
         public static OrderBySpec<TEntity> Ascending(Expression<Func<TEntity, object>> orderBy)
             => new OrderBySpec<TEntity>(OrderByDir.ASC, orderBy);
 
+        /// <summary>
+        /// Order by descending specification
+        /// </summary>
+        /// <param name="orderBy"></param>
+        /// <returns></returns>
         public static OrderBySpec<TEntity> Descending(Expression<Func<TEntity, object>> orderBy)
             => new OrderBySpec<TEntity>(OrderByDir.DESC, orderBy);
     }
