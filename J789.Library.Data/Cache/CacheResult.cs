@@ -1,8 +1,10 @@
 ﻿using J789.Library.Data.Abstraction.Cache;
 using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace J789.Library.Data.Cache
 {
+    [ExcludeFromCodeCoverage]
     public class CacheResult<TResult> : ICacheResult<TResult>
     {
         public CacheResult(string cacheKey, TimeSpan timeTaken, bool foundInCache)

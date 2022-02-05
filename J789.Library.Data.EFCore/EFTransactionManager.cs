@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 namespace J789.Library.Data.EFCore
 {
     /// <summary>
-    /// <see cref="https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency"/>
+    /// Handles transactions between multiple instances of DbContext
     /// </summary>
+    /// <see cref="https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency"/>
     public class EFTransactionManager
     {
         private IDbContext _context;

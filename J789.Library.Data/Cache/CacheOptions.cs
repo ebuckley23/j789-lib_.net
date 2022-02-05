@@ -1,8 +1,10 @@
 ﻿using J789.Library.Data.Abstraction.Cache;
 using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace J789.Library.Data.Cache
 {
+    [ExcludeFromCodeCoverage]
     public class CacheOptions : ICacheOptions
     {
         public CacheOptions()

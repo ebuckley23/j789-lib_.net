@@ -40,7 +40,7 @@ namespace J789.Library.Data.EFCore
         /// <summary>
         /// Begins database transaction if transaction not already started
         /// </summary>
-        /// <returns></returns>
+        /// <returns>IDbContextTransaction</returns>
         public async Task<IDbContextTransaction> BeginTransactionAsync()
         {
             if (HasActiveTransaction) return null;
@@ -48,6 +48,11 @@ namespace J789.Library.Data.EFCore
             return CurrentTransaction;
         }
 
+        /// <summary>
+        /// Share a transaction of an IDbContext with an existing active transaction
+        /// </summary>
+        /// <param name="context"></param>
+        /// <returns>IDbContextTransaction</returns>
         public async Task<IDbContextTransaction> ShareTransactionAsync(IDbContext context)
         {
             if (HasActiveTransaction || !context.HasActiveTransaction) return null;
@@ -56,7 +61,11 @@ namespace J789.Library.Data.EFCore
             await Database.UseTransactionAsync(CurrentTransaction.GetDbTransaction());
             return CurrentTransaction;
         }
-
+        /// <summary>
+        /// Share a transaction from an existing transaction
+        /// </summary>
+        /// <param name="transaction"></param>
+        /// <returns>IDbContextTransaction</returns>
         public async Task<IDbContextTransaction> ShareTransactionAsync(IDbContextTransaction transaction)
         {
             if (HasActiveTransaction) return null;
@@ -68,8 +77,8 @@ namespace J789.Library.Data.EFCore
 
         /// <summary>
         /// // Use of an EF Core resiliency strategy when using multiple DbContexts within an explicit BeginTransaction():
-        /// <see cref="https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency"/>
         /// </summary>
+        /// <see cref="https://docs.microsoft.com/en-us/ef/core/miscellaneous/connection-resiliency"/>
         public IExecutionStrategy GetExecutionStrategy() => Database.CreateExecutionStrategy();
 
         /// <summary>
