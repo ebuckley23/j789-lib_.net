@@ -32,20 +32,23 @@ namespace J789.Library.Core.UnitTests
             string tenantName, 
             string tenantOwnerId)
         {
-            var tenantIdPropName = "MyTenantId";
-            var tenantNamePropName = "MyTenantName";
-            var tenantOwnerIdPropName = "MyOwnerId";
-            var permissionPropName = "Permission";
+            var tenantIdNS = "MyTenantId";
+            var tenantNameNS = "MyTenantName";
+            var tenantOwnerIdNS = "MyOwnerId";
+            var permissionNS = "Permission";
+            var userRoleNS = "UserRoleProp";
             var expectedPerms = new[] { "permission1", "permission2", "permission3" };
+            var expectedUserRoles = new[] { "admin", "viewer" };
 
             var cp = new FakeClaimsPrincipal()
                 .AsJwtClaim(subjectId, firstName, lastName, email, idProvider: "Google");
 
-            cp.AddCustomClaim(tenantIdPropName, tenantId);
-            cp.AddCustomClaim(tenantNamePropName, tenantName);
-            cp.AddCustomClaim(tenantOwnerIdPropName, tenantOwnerId);
+            cp.AddCustomClaim(tenantIdNS, tenantId);
+            cp.AddCustomClaim(tenantNameNS, tenantName);
+            cp.AddCustomClaim(tenantOwnerIdNS, tenantOwnerId);
 
-            foreach (var p in expectedPerms) cp.AddCustomClaim(permissionPropName, p);
+            foreach (var p in expectedPerms) cp.AddCustomClaim(permissionNS, p);
+            foreach (var r in expectedUserRoles) cp.AddCustomClaim(userRoleNS, r);
 
             var userContext = new UserContext(GetUserContextConfiguration(), cp, ContextType.User);
 
@@ -61,6 +64,7 @@ namespace J789.Library.Core.UnitTests
             Assert.Equal(tenantName, userContext.TenantName);
             Assert.Equal(tenantOwnerId, userContext.TenantOwnerId);
             Assert.True(userContext.HasPermissions(expectedPerms.Select(ep => new ContextPermission(ep)).ToArray()));
+            Assert.False(userContext.HasRoles(expectedUserRoles.Select(r => new ContextUserRole(r)).ToArray()));
         }
 
         [InlineData("subjectId", "firstName", "lastName", "email", "a5dae037-1ddb-4723-b3e9-c8882298336c", "Manny's Business", "a5dae0371ddb4723b3e9")]
@@ -74,20 +78,23 @@ namespace J789.Library.Core.UnitTests
             string tenantName,
             string tenantOwnerId)
         {
-            var tenantIdPropName = "MyCustomIdProp";
-            var tenantNamePropName = "MyCustomTenantNameProp";
-            var tenantOwnerIdPropName = "MyCustomOwnerIdProp";
-            var permissionPropName = "PermissionProp";
+            var tenantIdNS = "MyCustomIdProp";
+            var tenantNameNS = "MyCustomTenantNameProp";
+            var tenantOwnerIdNS = "MyCustomOwnerIdProp";
+            var permissionNS = "PermissionProp";
+            var userRoleNS = "tenant_user_role";
             var expectedPerms = new[] { "permission1", "permission2", "permission3" };
+            var expectedUserRoles = new[] { "admin", "viewer" };
 
             var cp = new FakeClaimsPrincipal()
                 .AsJwtClaim(subjectId, firstName, lastName, email, idProvider: "Facebook");
 
-            cp.AddCustomClaim(tenantIdPropName, tenantId);
-            cp.AddCustomClaim(tenantNamePropName, tenantName);
-            cp.AddCustomClaim(tenantOwnerIdPropName, tenantOwnerId);
+            cp.AddCustomClaim(tenantIdNS, tenantId);
+            cp.AddCustomClaim(tenantNameNS, tenantName);
+            cp.AddCustomClaim(tenantOwnerIdNS, tenantOwnerId);
 
-            foreach (var p in expectedPerms) cp.AddCustomClaim(permissionPropName, p);
+            foreach (var p in expectedPerms) cp.AddCustomClaim(permissionNS, p);
+            foreach (var r in expectedUserRoles) cp.AddCustomClaim(userRoleNS, r);
 
             var userContext = new UserContext(cp, ContextType.User);
 
@@ -103,6 +110,7 @@ namespace J789.Library.Core.UnitTests
             Assert.Equal(userContext.TenantName, string.Empty);
             Assert.Equal(userContext.TenantOwnerId, string.Empty);
             Assert.False(userContext.HasPermissions(expectedPerms.Select(ep => new ContextPermission(ep)).ToArray()));
+            Assert.True(userContext.HasRoles(expectedUserRoles.Select(r => new ContextUserRole(r)).ToArray()));
         }
 
         [Fact]
@@ -153,6 +161,8 @@ namespace J789.Library.Core.UnitTests
                 .Returns("MyOwnerId");
             config.SetupGet(x => x[It.Is<string>(s => s == $"{baseContextConfigPath}:TenantPermissionConfig")])
                 .Returns("Permission");
+            config.SetupGet(x => x[It.Is<string>(s => s == $"{baseContextConfigPath}:TenantUserRoleConfig")])
+                .Returns("UserRole");
             config.Setup(x => x.GetSection(It.Is<string>(s => s == $"{baseContextConfigPath}:AdditionalProperties")))
                 .Returns(mockConfigSection.Object);
 

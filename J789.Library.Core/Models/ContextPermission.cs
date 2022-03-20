@@ -1,5 +1,4 @@
 ﻿using J789.Library.Core.Abstraction.Security;
-using System;
 
 namespace J789.Library.Core.Models
 {
