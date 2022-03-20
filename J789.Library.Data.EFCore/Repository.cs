@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace J789.Library.Data.EFCore
 {
-    public class Repository<TDbContext> : IRepository
+    public class Repository<TDbContext> : IEFCoreRepository
         where TDbContext : DbContext
     {
         protected readonly DbContextBase<TDbContext> _context;
@@ -125,5 +125,10 @@ namespace J789.Library.Data.EFCore
             return SpecificationEvaluator.GetQuery(_context.Set<TEntity>(), spec);
         }
         #endregion
+    }
+
+    public interface IEFCoreRepository : IRepository
+    {
+
     }
 }

@@ -52,6 +52,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		version.json = version.json
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "J789.Library.Data.Dapper", "J789.Library.Data.Dapper\J789.Library.Data.Dapper.csproj", "{3B34E7E9-7948-4B22-A729-8E0D40E77462}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,6 +128,10 @@ Global
 		{5D445CF6-1137-4DB6-877F-2DDCCC09895B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D445CF6-1137-4DB6-877F-2DDCCC09895B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D445CF6-1137-4DB6-877F-2DDCCC09895B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B34E7E9-7948-4B22-A729-8E0D40E77462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B34E7E9-7948-4B22-A729-8E0D40E77462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B34E7E9-7948-4B22-A729-8E0D40E77462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B34E7E9-7948-4B22-A729-8E0D40E77462}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -148,6 +154,7 @@ Global
 		{B3729F1C-D4AB-4F1D-97EE-0AE954125A3F} = {667F979F-C5EB-4576-B8FD-F61C4A895443}
 		{32825378-9351-47A8-ACBA-F9A2CB51B7BD} = {667F979F-C5EB-4576-B8FD-F61C4A895443}
 		{5D445CF6-1137-4DB6-877F-2DDCCC09895B} = {667F979F-C5EB-4576-B8FD-F61C4A895443}
+		{3B34E7E9-7948-4B22-A729-8E0D40E77462} = {E9FFE13D-406E-4F16-87E1-C08AD402B9C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7F0AD7B6-8976-4E16-B5D5-603ABAF337D2}

@@ -28,6 +28,7 @@
   <ItemGroup>
     <ProjectReference Include="..\J789.Library.Data.Abstraction\J789.Library.Data.Abstraction.csproj" />
     <ProjectReference Include="..\J789.Library.Data.Caching\J789.Library.Data.Caching.csproj" />
+    <ProjectReference Include="..\J789.Library.Data.Dapper\J789.Library.Data.Dapper.csproj" />
     <ProjectReference Include="..\J789.Library.Data.EFCore\J789.Library.Data.EFCore.csproj" />
   </ItemGroup>
 
