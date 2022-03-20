@@ -80,11 +80,11 @@ namespace J789.Library.Integration.MassTransit
         {
             var ret = Bus.Factory.CreateUsingInMemory(cfg =>
             {
-                cfg.ConfigureJsonDeserializer(s =>
-                {
-                    s.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-                    return s;
-                });
+                //cfg.ConfigureJsonDeserializer(s =>
+                //{
+                //    s.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                //    return s;
+                //});
 
                 ConfigureQueuesOnBus(cfg, queues, queueManager, dependencyResolver);
             });
