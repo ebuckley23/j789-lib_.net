@@ -30,7 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\J789.Library.Data.Abstraction\J789.Library.Data.Abstraction.csproj" />
     <ProjectReference Include="..\J789.Library.Data\J789.Library.Data.csproj" />
   </ItemGroup>
 
