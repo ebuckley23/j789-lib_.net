@@ -50,8 +50,9 @@ namespace J789.Library.Data.Caching
 
             var options = new CacheOptions();
             var ret = set(options);
+            // this is being serialized twice. TODO: Fix
             var val = JsonConvert.SerializeObject(ret);
-            await SetAsync(key, val, options);
+            await SetAsync(key, ret, options);
             cacheResult.SetResult(ret);
             cacheResult.SetRawJSON(val);
             return cacheResult;
@@ -65,6 +66,7 @@ namespace J789.Library.Data.Caching
             if (item == null) return;
 
             var val = JsonConvert.SerializeObject(item);
+
             await _cache.SetStringAsync(key, val, new DistributedCacheEntryOptions
             {
                 AbsoluteExpiration = cacheOptions?.Expiration,
