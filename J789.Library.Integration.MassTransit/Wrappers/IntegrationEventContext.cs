@@ -75,18 +75,17 @@ namespace J789.Library.Integration.MassTransit.Wrappers
         {
             var objType = obj.GetType();
             var intgMessage = this.IntegrationEvent;
-            if (objType.IsClass)
+            if (objType.IsClass && typeof(IIntegrationEvent).IsAssignableFrom(objType))
             {
-                var correlationIdProp = objType.GetProperty(nameof(IntegrationEvent.CorrelationId));
-                var conversationIdProp = objType.GetProperty(nameof(IntegrationEvent.ConversationId));
-                var experienceIdProp = objType.GetProperty(nameof(IntegrationEvent.ExperienceId));
-
-                if (correlationIdProp != null && correlationIdProp.CanWrite && this.CorrelationId.HasValue)
-                    correlationIdProp.SetValue(obj, this.CorrelationId);
-                if (conversationIdProp != null && conversationIdProp.CanWrite && this.ConversationId.HasValue)
-                    conversationIdProp.SetValue(obj, this.ConversationId);
-                if (experienceIdProp != null && experienceIdProp.CanWrite && (intgMessage?.ExperienceId.HasValue ?? false))
-                    experienceIdProp.SetValue(obj, intgMessage?.ExperienceId);
+                //TODO: Think about doing this a different way as magic strings are fragile during a refactor
+                // however I would like any value changes to these properties to be intentional, thus this is why
+                // these methods exist
+                if (this.CorrelationId.HasValue)
+                    objType.GetMethod("SetCorrelationId").Invoke(obj, new object[] { this.CorrelationId });
+                if (this.ConversationId.HasValue)
+                    objType.GetMethod("SetConversationId").Invoke(obj, new object[] { this.ConversationId });
+                if ((intgMessage?.ExperienceId.HasValue ?? false))
+                    objType.GetMethod("SetExperienceId").Invoke(obj, new object[] { intgMessage?.ExperienceId }); 
             }
         }
 

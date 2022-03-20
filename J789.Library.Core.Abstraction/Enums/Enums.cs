@@ -11,7 +11,8 @@
     public enum IdentityIntegrationType
     {
         Local,
-        AmazonCognito
+        AmazonCognito,
+        Auth0
     }
 
     public enum SocialProviderType

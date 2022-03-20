@@ -19,11 +19,10 @@ namespace J789.Library.Integration.MassTransit
             Action<IConsumerQueueManagerConfigurator> config,
             string hostUri,
             bool isTls,
-            MTBusIntegration mTBusIntegration,
+            MTBusIntegration mTBusIntegration = MTBusIntegration.RabbitMQ,
             IDependencyResolver resolver = null)
         {
             var containerResolver = resolver ?? services.ToResolver();
-            var t = new InMemoryTestHarness();
 
             var qManager = new ConsumerQueueManager();
             config(qManager);
@@ -81,11 +80,11 @@ namespace J789.Library.Integration.MassTransit
         {
             var ret = Bus.Factory.CreateUsingInMemory(cfg =>
             {
-                cfg.ConfigureJsonDeserializer(s =>
-                {
-                    s.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
-                    return s;
-                });
+                //cfg.ConfigureJsonDeserializer(s =>
+                //{
+                //    s.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+                //    return s;
+                //});
 
                 ConfigureQueuesOnBus(cfg, queues, queueManager, dependencyResolver);
             });

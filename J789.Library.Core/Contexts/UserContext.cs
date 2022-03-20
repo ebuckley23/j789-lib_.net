@@ -17,15 +17,17 @@ namespace J789.Library.Core.Contexts
         private readonly IConfiguration _configuration;
 
         public const string USER_CONTEXT_CONFIG_PATH = "Core:UserContext";
-        public const string TENANT_CONFIG_ID_PROP = USER_CONTEXT_CONFIG_PATH + ":TenantIdConfig";
-        public const string TENANT_CONFIG_NAME_PROP = USER_CONTEXT_CONFIG_PATH + ":TenantNameConfig";
-        public const string TENANT_CONFIG_OWNERID_PROP = USER_CONTEXT_CONFIG_PATH + ":TenantOwnerIdConfig";
-        public const string TENANT_CONFIG_PERMISSION_PROP =  USER_CONTEXT_CONFIG_PATH + ":TenantPermissionConfig";
-        public const string ADDITIONAL_PROPERTIES_CONFIG_PROP = USER_CONTEXT_CONFIG_PATH + ":AdditionalProperties";
+        public const string TENANT_CONFIG_ID_NS = USER_CONTEXT_CONFIG_PATH + ":TenantIdConfig";
+        public const string TENANT_CONFIG_NAME_NS = USER_CONTEXT_CONFIG_PATH + ":TenantNameConfig";
+        public const string TENANT_CONFIG_OWNERID_NS = USER_CONTEXT_CONFIG_PATH + ":TenantOwnerIdConfig";
+        public const string TENANT_CONFIG_PERMISSION_NS =  USER_CONTEXT_CONFIG_PATH + ":TenantPermissionConfig";
+        public const string TENANT_CONFIG_USERROLE_NS = USER_CONTEXT_CONFIG_PATH + ":TenantUserRoleConfig";
+        public const string ADDITIONAL_PROPERTIES_CONFIG_NS = USER_CONTEXT_CONFIG_PATH + ":AdditionalProperties";
         private const string TENANT_ID = "tenant_id";
         private const string TENANT_NAME = "tenant_name";
         private const string TENANT_OWNER_ID = "tenant_owner_id";
         private const string TENANT_PERMISSION = "tenant_permission";
+        private const string TENANT_USER_ROLE = "tenant_user_role";
 
         public UserContext(ClaimsPrincipal claimsPrincipal)
             : base(claimsPrincipal)
@@ -136,7 +138,7 @@ namespace J789.Library.Core.Contexts
         {
             get
             {
-                var tenantIdConfig = _configuration?[TENANT_CONFIG_ID_PROP] ?? TENANT_ID;
+                var tenantIdConfig = _configuration?[TENANT_CONFIG_ID_NS] ?? TENANT_ID;
                 var claims = _claimsPrincipal.Claims;
                 return claims.LastOrDefault(c => c.Type == tenantIdConfig)?.Value ?? string.Empty;
             }
@@ -146,7 +148,7 @@ namespace J789.Library.Core.Contexts
         {
             get
             {
-                var tenantNameConfig = _configuration?[TENANT_CONFIG_NAME_PROP] ?? TENANT_NAME;
+                var tenantNameConfig = _configuration?[TENANT_CONFIG_NAME_NS] ?? TENANT_NAME;
                 var claims = _claimsPrincipal.Claims;
                 return claims.LastOrDefault(c => c.Type == tenantNameConfig)?.Value ?? string.Empty;
             }
@@ -155,7 +157,7 @@ namespace J789.Library.Core.Contexts
         {
             get
             {
-                var tenantOwnerIdConfig = _configuration?[TENANT_CONFIG_OWNERID_PROP] ?? TENANT_OWNER_ID;
+                var tenantOwnerIdConfig = _configuration?[TENANT_CONFIG_OWNERID_NS] ?? TENANT_OWNER_ID;
                 var claims = _claimsPrincipal.Claims;
                 return claims.LastOrDefault(c => c.Type == tenantOwnerIdConfig)?.Value ?? string.Empty;
             }
@@ -168,13 +170,26 @@ namespace J789.Library.Core.Contexts
         {
             get
             {
-                var tenantPermissionConfig = _configuration?[TENANT_CONFIG_PERMISSION_PROP] ?? TENANT_PERMISSION;
+                var tenantPermissionConfig = _configuration?[TENANT_CONFIG_PERMISSION_NS] ?? TENANT_PERMISSION;
                 var claims = _claimsPrincipal.Claims;
                 var tenant_perms = claims.Where(c => c.Type == tenantPermissionConfig);
 
                 if (tenant_perms.Count() == 0) return Enumerable.Empty<IPermission>();
 
                 return tenant_perms.Select(c => new ContextPermission(c.Value));
+            }
+        }
+
+        public virtual IEnumerable<IUserRole> Roles
+        {
+            get
+            {
+                var tenantRoleConfig = _configuration?[TENANT_CONFIG_USERROLE_NS] ?? TENANT_USER_ROLE;
+                var claims = _claimsPrincipal.Claims;
+                var tenant_roles = claims.Where(c => c.Type == tenantRoleConfig);
+                if (tenant_roles.Count() == 0) return Enumerable.Empty<IUserRole>();
+
+                return tenant_roles.Select(c => new ContextUserRole(c.Value));
             }
         }
 
@@ -186,6 +201,11 @@ namespace J789.Library.Core.Contexts
         public bool HasPermission(IPermission permission)
         {
             return Permissions.Any(p => p.Name == permission.Name);
+        }
+
+        public bool HasRole(IUserRole role)
+        {
+            return Roles.Any(r => r.Name == role.Name);
         }
 
         public static IUserContext AsAnonymous()
@@ -200,9 +220,25 @@ namespace J789.Library.Core.Contexts
                 if (!HasPermission(p))
                 {
                     ret = false;
+                    break;
                 }
             }
 
+            return ret;
+        }
+
+        public bool HasRoles(params IUserRole[] roles)
+        {
+            var ret = true;
+            
+            foreach (var r in roles)
+            {
+                if (!HasRole(r))
+                {
+                    ret = false;
+                    break;
+                }
+            }
             return ret;
         }
 
