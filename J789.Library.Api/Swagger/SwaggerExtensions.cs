@@ -12,10 +12,14 @@ namespace J789.Library.Api.Swagger
         /// Important: SwaggerUI url should be configured as a valid callback url with the authentication authority
         /// </summary>
         /// <param name="options"></param>
-        /// <param name="authority"></param>
-        /// <param name="audience"></param>
-        public static void AddImplicitFlowAuthorization(this SwaggerGenOptions options, string authority, string audience)
+        /// <param name="authority">The authentication authority</param>
+        /// <param name="audience">The audience at which the token is scoped for</param>
+        /// <param name="additionalScopes">Any additional scopes to be requested when asking for the token</param>
+        public static void AddImplicitFlowAuthorization(this SwaggerGenOptions options, string authority, string audience, params string[] additionalScopes)
         {
+            var scopes = new Dictionary<string, string> { { "openid", "Open Id" } };
+            foreach (var s in additionalScopes) scopes.Add(s, s);
+
             options.AddSecurityDefinition("Bearer", new Microsoft.OpenApi.Models.OpenApiSecurityScheme
             {
                 Name = "Authorization",
@@ -25,7 +29,7 @@ namespace J789.Library.Api.Swagger
                 {
                     Implicit = new Microsoft.OpenApi.Models.OpenApiOAuthFlow
                     {
-                        Scopes = new Dictionary<string, string> { { "openid", "Open Id" } },
+                        Scopes = scopes,
                         AuthorizationUrl = new Uri(BuildAuthorizationUrl(authority, audience))
                     }
                 }

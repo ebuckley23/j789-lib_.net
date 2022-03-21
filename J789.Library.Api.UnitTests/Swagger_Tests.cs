@@ -54,16 +54,17 @@ namespace J789.Library.Api.UnitTests
             Assert.Empty(openApiOp.Security);
         }
 
-        [InlineData("https://example.auth0.com", "https://unitests")]
-        [InlineData("https://example.auth0.com/", "https://unitests")]
+        [InlineData("https://example.auth0.com", "https://unitests", "")]
+        [InlineData("https://example.auth0.com/", "https://unitests", "")]
+        [InlineData("https://example.auth0.com", "http://unittests", "read:email,update:user,create:role")]
         [Theory]
-        public void Can_Configure_Implicit_Authorization_Flow_Correctly(string authority, string audience)
+        public void Can_Configure_Implicit_Authorization_Flow_Correctly(string authority, string audience, string additionalScopes)
         {
             var swaggerGenOpts = new SwaggerGenOptions();
 
             Assert.Empty(swaggerGenOpts.SwaggerGeneratorOptions.SecuritySchemes);
 
-            swaggerGenOpts.AddImplicitFlowAuthorization(authority, audience);
+            swaggerGenOpts.AddImplicitFlowAuthorization(authority, audience, additionalScopes.Split(","));
 
             Assert.NotEmpty(swaggerGenOpts.SwaggerGeneratorOptions.SecuritySchemes);
             Assert.True(swaggerGenOpts.SwaggerGeneratorOptions.SecuritySchemes.ContainsKey("Bearer"));
@@ -79,6 +80,13 @@ namespace J789.Library.Api.UnitTests
             Assert.NotNull(scheme.Flows.Implicit.AuthorizationUrl);
             Assert.Contains(authority, scheme.Flows.Implicit.AuthorizationUrl.AbsoluteUri);
             Assert.Contains(audience, scheme.Flows.Implicit.AuthorizationUrl.AbsoluteUri);
+            if (!string.IsNullOrEmpty(additionalScopes))
+            {
+                foreach(var s in additionalScopes.Split(","))
+                {
+                    Assert.True(scheme.Flows.Implicit.Scopes.ContainsKey(s));
+                }
+            }
         }
     }
 
